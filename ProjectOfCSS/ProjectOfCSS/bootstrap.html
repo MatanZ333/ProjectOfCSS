@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .up {
+            width: 30vw;
+            height: 15px;
+            margin-top: 0;
+            margin-left: 70%;
+            background-color: yellow;
+        }
+
+        .down {
+            width: 40vw;
+            height: 12px;
+            margin-left: 0;
+            margin-top: -40px;
+            background-color: yellow;
+        }
+
+        .container {
+            direction: rtl;
+        }
+
+        #iphone {
+            width: 350px;
+            height: 500px;
+            margin-top: 100px;
+        }
+
+        h1 {
+            text-align: right;
+            margin-top: 170px;
+        }
+
+        p {
+            text-align: right;
+        }
+
+        input {
+            background-color: #E5EEFF;
+            width: 200px;
+            height: 40px;
+            border-bottom: 5px solid yellow;
+        }
+
+        #whatsapp {
+            margin-top: 30px;
+            margin-right: 40px;
+        }
+
+        #text {
+            width: 508px;
+            height: 80px;
+        }
+
+        button {
+            width: 120px;
+            height: 50px;
+            background: #FDBD03 0% 0% no-repeat padding-box;
+            margin-top: 20px;
+        }
+
+        .two,
+        button {
+            display: block;
+        }
+
+        .box {
+            direction: rtl;
+        }
+
+        .bg-warning {
+            width: 40px;
+            height: 40px;
+            margin-top: 80px;
+            border-radius: 20%;
+            cursor: pointer;
+        }
+
+        .first {
+            margin-right: 530px;
+            cursor: pointer;
+        }
+
+        .second {
+            margin-right: 575px;
+            margin-top: -70px;
+            cursor: pointer;
+        }
+
+        .third {
+            margin-right: 620px;
+            margin-top: -117px;
+            cursor: pointer;
+        }
+
+        #face {
+            margin-top: 490px;
+            margin-left: 90px;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width:560px) {
+            body {
+                overflow-y: auto;
+            }
+
+            #iphone {
+                width: 130px;
+                height: 200px;
+                margin-top: 40px;
+                margin-right: 120px;
+            }
+
+            h1 {
+                margin-top: 10px;
+                margin-right: 70px;
+                font: normal normal 900 65px/80px Heebo;
+            }
+
+            p {
+                font: normal normal normal 25px/35px Heebo;
+                margin-right: 30px;
+            }
+
+            .one,
+            .two {
+                display: flex;
+                flex-direction: column;
+            }
+
+            label {
+                margin-right: 40px;
+            }
+
+            input,
+            #text {
+                width: 80vw;
+                margin-right: 35px;
+            }
+
+            button {
+                width: 80vw;
+                margin-right: 35px;
+            }
+
+
+            .first {
+                display: flex;
+                margin-right: 80px;
+                margin-top: 10px;
+            }
+
+            .second {
+                display: flex;
+                margin-right: 130px;
+                margin-top: -40px;
+            }
+
+            .third {
+                margin-top: -70px;
+                margin-right: 180px;
+            }
+
+            #whatsapp {
+                display: flex;
+                margin-right: 230px;
+                margin-top: -64px;
+            }
+
+            #face {
+                display: flex;
+                margin-right: 280px;
+                margin-top: -40px;
+            }
+
+            .up {
+                width: 80vw;
+                margin-left: 100px;
+            }
+
+            .down {
+                width: 100vw;
+                margin-top: 5px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="up"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="iphone.png" alt="iphone" id="iphone">
+            </div>
+
+
+            <div class="col-md-7">
+                <h1 class="text-warning">ייעוץ חינם</h1>
+                <p class="text-secondary">לקבלת ייעוץ חינם, מוזמנים להשאיר פרטים ומומחה יחזור אליכם עם מענה.</p>
+
+                <div class="box">
+                    <label class="text-secondary one">שם מלא</label>
+                    <input type="text">
+
+                    <label class="text-secondary one">דוא״ל</label>
+                    <input type="text">
+
+                    <label class="text-secondary two">שם מלא</label>
+                    <input type="text" id="text">
+
+                    <button class="taxt-secondary button">שליחה</button>
+                </div>
+
+                <img src="instagram.svg" alt="instagram" class="bg-warning first">
+                <img src="linkedin.svg" alt="linkedin" class="bg-warning second">
+                <img src="telephone-fill.svg" alt="tellephone" class="bg-warning third">
+
+            </div>
+
+            <div class="col-md-1">
+                <img src="Icon awesome-whatsapp.png" alt="whatsapp" id="whatsapp" class="bg-warning">
+                <img src="facebook.svg" alt="facebook" class="bg-warning" id="face">
+            </div>
+
+        </div>
+    </div>
+
+    <div class="down"></div>
+
+</body>
+
+</html>

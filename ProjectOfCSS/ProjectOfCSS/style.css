@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: hidden;
+}
+
+.img-container {
+    width: 800px;
+    height: 700px;
+    border: 1px solid #707070;
+}
+
+img {
+    width: 800px;
+    height: 700px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+#form-headline {
+    width: 362px;
+    height: 63px;
+    text-align: center;
+    font: normal normal 900 43px/63px Heebo;
+    letter-spacing: 0px;
+    color: #020253;
+}
+
+#form-paragraph {
+    text-align: center;
+    font: 20px/25px Heebo;
+    letter-spacing: 0px;
+    color: #020253;
+}
+
+.label {
+    text-align: right;
+    font: bold 16px/24px Heebo;
+    letter-spacing: 0px;
+    color: #2C2C2C;
+    opacity: 1;
+}
+
+.input {
+    width: 460px;
+    height: 50px;
+    background: #E5EEFF 0% 0% no-repeat padding-box;
+    border-bottom: 3px solid #020253;
+    opacity: 1;
+    margin-top: 1em;
+}
+
+#btn {
+    font: normal normal bold 22px/30px Heebo;
+    letter-spacing: 0.33px;
+    color: #FFFFFF;
+    margin-right: 30px;
+    width: 166px;
+    height: 50px;
+    background: #020253 0% 0% no-repeat padding-box;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    direction: rtl;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    margin: 2em;
+}
+
+@media screen and (max-width:560px) {
+
+    body {
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 650px;
+    }
+
+    .img-container {
+        border: 0;
+        width: 100vw;
+    }
+
+    img {
+        width: 100vw;
+        height: 310px;
+        background: transparent url('img/Coffee.png') 0% 0% no-repeat padding-box;
+    }
+
+    .form-control,
+    .input {
+        width: 80vw;
+        margin-right: 10px;
+    }
+
+    .form-control-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    #form-headline,
+    #form-paragraph {
+        margin: auto;
+    }
+
+    #form-paragraph {
+        width: 300px;
+    }
+
+}
